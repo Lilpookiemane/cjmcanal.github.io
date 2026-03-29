@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NationalParks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			   xsi:noNamespaceSchemaLocation="NationalParks.xsd">
+
+	<!-- Wrong root element -->
+	<NationalPar NearestAirport="Fresno" Rating="4.7">
+		<Name>Yosemite</Name>
+		<Phone>209-372-0200</Phone>
+		<Address>
+			<Number>9035</Number>
+			<Street>Village Drive</Street>
+			<City>Yosemite Valley</City>
+			<State>CA</State>
+			<Zip>95389</Zip>
+		</Address>
+	</NationalPark>
+
+	<!-- Missing required attribute -->
+		<NationalPark Rating="4.7">
+			<Name>Yosemite</Name>
+			<Phone>209-372-0200</Phone>
+			<Address>
+				<Number>9035</Number>
+				<Street>Village Drive</Street>
+				<City>Yosemite Valley</City>
+				<Zip>95389</Zip>
+			</Address>
+		</NationalPark>
+
+		<!-- Phone element is missing -->
+
+		<NationalPark NearestAirport="El Paso" Rating="4.6">
+			<Name>Carlsbad Caverns</Name>
+			<Address>
+				<Number>727</Number>
+				<Street>Carlsbad Caverns Highway</Street>
+				<City>Carlsbad</City>
+				<State>NM</State>
+				<Zip>88220</Zip>
+			</Address>
+		</NationalPark>
+
+		<!-- Closing Address tag missing -->
+
+		<NationalPark NearestAirport="Bozeman" Rating="4.9">
+			<Name>Yellowstone</Name>
+			<Phone>307-344-7381</Phone>
+			<Address>
+				<Number>2</Number>
+				<Street>Grand Loop Road</Street>
+				<City>Yellowstone National Park</City>
+				<State>WY</State>
+				<Zip>82190</Zip>
+		</NationalPark>
+
+		<!-- Two Name elements -->
+
+		<NationalPark NearestAirport="Flagstaff">
+			<Name>Petrified Forest</Name>
+			<Name>Petrified Forest</Name>
+			<Phone>928-524-6228</Phone>
+			<Address>
+				<Number>1</Number>
+				<Street>Park Road</Street>
+				<City>Petrified Forest National Park</City>
+				<State>AZ</State>
+				<Zip>86028</Zip>
+			</Address>
+		</NationalPark>
+		
+		
+</NationalParks>
